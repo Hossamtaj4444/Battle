@@ -1,0 +1,103 @@
+body {
+    background-color: #243b53;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    text-align: center;
+    padding: 50px 5%;
+  }
+.journey {
+    padding: 50px 20px;
+    background-color: #1e2a3a;
+  }
+  
+  .journey h2 {
+    color: #00d9ff;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .journey-content {
+    display: flex;
+    justify-content: center; /* تأكيد التركيز على العناصر */
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    flex-wrap: wrap; 
+  }
+  
+  .journey-content div {
+    background-color: #243b53;
+    padding: 20px;
+    border-radius: 10px;
+    width: calc(50% - 20px); /* استخدم calc لضمان تباعد مناسب */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  /* تحسين العرض للأجهزة الصغيرة */
+  @media (max-width: 768px) {
+    .journey-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .journey-content div {
+      width: 100%; /* كل عنصر يأخذ عرض الشاشة بالكامل */
+    }
+  
+    .about-me {
+      padding: 20px; /* تقليل الحشو ليبدو أفضل على الشاشات الصغيرة */
+    }
+  }
+  
+  /* قسم الاتصال */
+  .contact {
+    background-color: #0d1b2a;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 0; /* إزالة الزوايا المدورة لضمان تغطية العرض بالكامل */
+  }
+  
+  .contact h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #00bcd4;
+  }
+  
+  .contact h3 {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+    line-height: 1.5;
+  }
+  
+  /* تحسين العرض للأجهزة الصغيرة */
+  @media (max-width: 768px) {
+    .contact h2 {
+      font-size: 28px;
+    }
+  
+    .contact h3 {
+      font-size: 16px;
+    }
+  
+    .contact {
+      padding: 20px;
+    }
+  }
+  
+  /* تحسين العرض للأجهزة الكبيرة */
+  @media (min-width: 769px) {
+    .contact h2 {
+      font-size: 36px;
+    }
+  
+    .contact h3 {
+      font-size: 20px;
+    }
+  }
